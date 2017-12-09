@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "392012300576",
+    "firebase_url": "https://wombat-74c86.firebaseio.com",
+    "project_id": "wombat-74c86",
+    "storage_bucket": "wombat-74c86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392012300576:android:befa836b75d7746f",
+        "android_client_info": {
+          "package_name": "com.example.fistinbone.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392012300576-dfqkdleb4a09jcel3dgs90plshgds7rv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fistinbone.myapplication",
+            "certificate_hash": "3fe245ecc1ddcc77c827b5a291ed769a2db082b4"
+          }
+        },
+        {
+          "client_id": "392012300576-2jbk84lpv2rm8iolun3umce4k4e72uo3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz_kHRsUgfEbPDh2g68UoBXp5p7YbNocA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392012300576-2jbk84lpv2rm8iolun3umce4k4e72uo3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

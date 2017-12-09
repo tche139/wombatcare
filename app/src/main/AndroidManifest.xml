@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fistinbone.myapplication">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <user-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <permission android:name="com.example.fistinbone.myapplication.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+
+    <user-permission android:name="com.example.fistinbone.myapplication.permission.MAPS_RECEIVE"/>
+    <user-permission android:name="com.google.android.provider.gsf.permissions.READ_GSERVICES"/>
+    <user-feature android:glEsVersion="@integer/google_play_services_version"
+        android:required="true"/>
+
+    <uses-feature android:name="android.hardware.location.gps"/>
+
+    <application
+
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WomCare"
+            android:screenOrientation="portrait"
+
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".WombatMovie"
+            android:screenOrientation="portrait"
+            android:theme="@style/MovieTheme"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".ThankYou"
+            android:parentActivityName=".Report"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".Wombat"
+            android:parentActivityName=".WomCare"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Report"
+            android:parentActivityName=".WomCare"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+
+        </activity>
+
+
+        <activity
+            android:name=".Learning1"
+            android:parentActivityName=".Wombat"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".Learning2"
+            android:parentActivityName=".Wombat"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".Learning3"
+            android:parentActivityName=".Wombat"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".Learning4"
+            android:parentActivityName=".Wombat"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".Learning5"
+            android:parentActivityName=".Wombat"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".Learning6"
+            android:parentActivityName=".Wombat"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".Testing1"
+            android:parentActivityName=".Wombat"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".Testing2"
+            android:parentActivityName=".Wombat"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".LaunchingTheme"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:theme="@style/LaunchingTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Website"
+            android:parentActivityName=".WomCare"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".Setting"
+            android:parentActivityName=".WomCare"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".Event"
+            android:parentActivityName=".WomCare"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".Medal"
+            android:parentActivityName=".WomCare"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".Profile"
+            android:parentActivityName=".Setting"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".OurTeam"
+            android:parentActivityName=".Setting"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".AppVersion"
+            android:parentActivityName=".Setting"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCZFaAdVjXQGyzLBnr5N0pUA_BcTbBPnB4" />
+            <!--android:value="AIzaSyC0D5GhJgHlf2WfACuaPEVY1Z2iihic3aU"/>-->
+
+        <service
+            android:name=".Fragment.MusicService"
+            android:exported="true"
+            android:process=":remote"
+            android:stopWithTask="true"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Wombat1ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        Copyright 2017 Adrián García Lomas
+
+        <com.github.glomadrian.grav.GravView
+            android:id="@+id/grav"
+            android:layout_width="415dp"
+            android:layout_height="2390dp"
+            app:colorGenerator="com.github.glomadrian.grav.generator.paint.ArrayColorGenerator"
+            app:array_colors="@array/walla_colors"
+            app:pointGenerator="com.github.glomadrian.grav.generator.point.RegularPointGenerator"
+            app:regular_cell_size="350"
+            app:regular_variance="200"
+            app:ball_size_from_size="9dp"
+            app:ball_size_to_size="13dp"
+            app:ball_from_size="13dp"
+            app:ball_to_size="17dp"
+            app:animationGenerators="@array/WallaIcon"
+            app:alpha_from="100"
+            app:alpha_to="200"
+            app:alpha_min_duration="1600"
+            app:alpha_max_duration="3000"
+            app:shake_direction="vertical"
+            app:shake_variance="20dp"
+            app:shake_min_duration="3000"
+            app:shake_max_duration="5000"
+            app:percent_points_array="@array/walla_points_percent_points"
+            app:gravGenerator="com.github.glomadrian.grav.generator.grav.BallGenerator"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="-10dp" />
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="52dp"
+            android:layout_height="81dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleX="-1"
+            android:scaleY="1"
+            app:layout_constraintBottom_toTopOf="@+id/lesson3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson2"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/footprint" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="52dp"
+            android:layout_height="81dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleX="-1"
+            android:scaleY="1"
+            app:layout_constraintBottom_toTopOf="@+id/lesson5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson4"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/footprint" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="52dp"
+            android:layout_height="81dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleX="-1"
+            android:scaleY="1"
+            app:layout_constraintBottom_toTopOf="@+id/lesson7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson6"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/footprint" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="52dp"
+            android:layout_height="81dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/lesson2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson1"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/footprint" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="52dp"
+            android:layout_height="81dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/lesson4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson3"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/footprint" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="52dp"
+            android:layout_height="81dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/lesson6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson5"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/footprint" />
+        <!--<ImageView-->
+        <!--android:id="@+id/imageView10"-->
+        <!--android:layout_width="52dp"-->
+        <!--android:layout_height="81dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/lesson8"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/lesson7"-->
+        <!--app:layout_constraintVertical_bias="1.0"-->
+        <!--app:srcCompat="@drawable/footprint" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/lesson8_quiz"-->
+        <!--android:layout_width="114dp"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:src="@drawable/right_button_animation"-->
+        <!--android:clickable="true"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/lesson8"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/lesson8_learn"-->
+        <!--android:layout_marginLeft="0dp" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/lesson8_learn"-->
+        <!--android:layout_width="114dp"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:layout_marginLeft="72dp"-->
+        <!--android:layout_marginRight="186dp"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:src="@drawable/left_button_animation"-->
+        <!--android:clickable="true"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/lesson8" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/lesson8"-->
+        <!--android:layout_width="228dp"-->
+        <!--android:layout_height="180dp"-->
+        <!--android:layout_marginTop="144dp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/lesson7"-->
+        <!--app:srcCompat="@drawdable/card8" />-->
+
+        <ImageView
+            android:id="@+id/lesson7_quiz"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="32dp"
+            android:clickable="true"
+            android:onClick="testPage7"
+            android:src="@drawable/right_button_animation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/lesson7_learn"
+            app:layout_constraintTop_toBottomOf="@+id/lesson7" />
+
+        <ImageView
+            android:id="@+id/lesson7_learn"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="186dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="186dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="0dp"
+            android:clickable="true"
+            android:onClick="learnPage7"
+            android:src="@drawable/left_button_animation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson7" />
+
+        <ImageView
+            android:id="@+id/lesson7"
+            android:layout_width="228dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="144dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson6"
+            app:srcCompat="@drawable/grey7" />
+
+        <ImageView
+            android:id="@+id/lesson6_quiz"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:onClick="testPage6"
+            android:src="@drawable/right_button_animation"
+            app:layout_constraintLeft_toRightOf="@+id/lesson6_learn"
+            app:layout_constraintTop_toBottomOf="@+id/lesson6" />
+
+        <ImageView
+            android:id="@+id/lesson6_learn"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="186dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="186dp"
+            android:layout_marginStart="72dp"
+            android:clickable="true"
+            android:onClick="learnPage6"
+            android:src="@drawable/left_button_animation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson6" />
+
+        <ImageView
+            android:id="@+id/lesson6"
+            android:layout_width="228dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="144dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson5"
+            app:srcCompat="@drawable/grey6" />
+
+        <ImageView
+            android:id="@+id/lesson5_quiz"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:onClick="testPage5"
+            android:src="@drawable/right_button_animation"
+            app:layout_constraintLeft_toRightOf="@+id/lesson5_learn"
+            app:layout_constraintTop_toBottomOf="@+id/lesson5" />
+
+        <ImageView
+            android:id="@+id/lesson5_learn"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="186dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="186dp"
+            android:layout_marginStart="72dp"
+            android:clickable="true"
+            android:onClick="learnPage5"
+            android:src="@drawable/left_button_animation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson5" />
+
+        <ImageView
+            android:id="@+id/lesson5"
+            android:layout_width="228dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="144dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson4"
+            app:srcCompat="@drawable/grey5" />
+
+        <ImageView
+            android:id="@+id/lesson4_quiz"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:onClick="testPage4"
+            android:src="@drawable/right_button_animation"
+            android:text="Button"
+            app:layout_constraintLeft_toRightOf="@+id/lesson4_learn"
+            app:layout_constraintTop_toBottomOf="@+id/lesson4" />
+
+        <ImageView
+            android:id="@+id/lesson4_learn"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="186dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="186dp"
+            android:layout_marginStart="72dp"
+            android:clickable="true"
+            android:onClick="learnPage4"
+            android:src="@drawable/left_button_animation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson4" />
+
+        <ImageView
+            android:id="@+id/lesson4"
+            android:layout_width="228dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="144dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson3"
+            app:srcCompat="@drawable/grey4" />
+
+        <ImageView
+            android:id="@+id/lesson3_quiz"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:onClick="testPage3"
+            android:src="@drawable/right_button_animation"
+            app:layout_constraintLeft_toRightOf="@+id/lesson3_learn"
+            app:layout_constraintTop_toBottomOf="@+id/lesson3" />
+
+        <ImageView
+            android:id="@+id/lesson3_learn"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="186dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="186dp"
+            android:layout_marginStart="72dp"
+            android:clickable="true"
+            android:onClick="learnPage3"
+            android:src="@drawable/left_button_animation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson3" />
+
+        <ImageView
+            android:id="@+id/lesson3"
+            android:layout_width="228dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="144dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson2"
+            app:srcCompat="@drawable/grey3" />
+
+        <ImageView
+            android:id="@+id/lesson2_quiz"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:onClick="testPage2"
+            android:src="@drawable/right_button_animation"
+            app:layout_constraintLeft_toRightOf="@+id/lesson2_learn"
+            app:layout_constraintTop_toBottomOf="@+id/lesson2" />
+
+        <ImageView
+            android:id="@+id/lesson2_learn"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="186dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="186dp"
+            android:layout_marginStart="72dp"
+            android:clickable="true"
+            android:onClick="learnPage2"
+            android:src="@drawable/left_button_animation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson2" />
+
+        <ImageView
+            android:id="@+id/lesson2"
+            android:layout_width="228dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="144dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson1"
+            app:srcCompat="@drawable/grey2" />
+
+        <ImageView
+            android:id="@+id/lesson1_quiz"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:onClick="testPage1"
+            android:src="@drawable/right_button_animation"
+            app:layout_constraintLeft_toRightOf="@+id/lesson1_learn"
+            app:layout_constraintTop_toBottomOf="@+id/lesson1" />
+
+        <ImageView
+            android:id="@+id/lesson1_learn"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="186dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="186dp"
+            android:layout_marginStart="72dp"
+            android:clickable="true"
+            android:onClick="learnPage1"
+            android:src="@drawable/left_button_animation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson1" />
+
+        <ImageView
+            android:id="@+id/lesson1"
+            android:layout_width="228dp"
+            android:layout_height="180dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="72dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wombat"
+            app:srcCompat="@drawable/card_1"
+            tools:layout_constraintTop_creator="1" />
+
+        <ImageView
+            android:id="@+id/wombat"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@color/colorAccent" />
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="81dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/lesson2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson1"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/footprint" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

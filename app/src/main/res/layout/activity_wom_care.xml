@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wombat_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fistinbone.myapplication.WomCare">
+
+
+    <ImageView
+        android:id="@+id/wombat1"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:onClick="wombat1"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wombat_1" />
+
+    <ImageView
+        android:id="@+id/wombat2"
+        android:layout_width="152dp"
+        android:layout_height="142dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:onClick="wombat2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wombat1"
+        app:srcCompat="@drawable/s_wombat"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <ImageView
+        android:id="@+id/wombat3"
+        android:layout_width="152dp"
+        android:layout_height="142dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="wombat3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/n_wombat"
+        app:layout_constraintHorizontal_bias="0.497"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/wombat2" />
+
+
+    <ImageView
+        android:id="@+id/websites"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="website"
+        android:src="@drawable/website"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/event" />
+
+    <ImageView
+        android:id="@+id/event"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="event"
+        app:srcCompat="@drawable/find_icon"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/medal"
+        android:layout_marginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/medal"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/medal"
+        android:clickable="true"
+        android:onClick="medal"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/setting" />
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/setting"
+        android:onClick="setting"
+        android:clickable="true"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_translate" />
+
+    <ImageView
+        android:id="@+id/button_translate"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:clickable="true"
+        android:onClick="translation"
+        android:src="@drawable/up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="RtlHardcoded"
+        android:layout_marginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/report"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:clickable="true"
+        android:onClick="report"
+        app:layout_constraintBottom_toTopOf="@+id/websites"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/photo_icon" />
+
+    <ImageView
+        android:id="@+id/dialog3"
+        android:layout_width="96dp"
+        android:layout_height="130dp"
+
+        app:layout_constraintLeft_toRightOf="@+id/wombat3"
+        app:layout_constraintTop_toTopOf="@+id/wombat3" />
+
+    <ImageView
+        android:id="@+id/dialog2"
+        android:layout_width="96dp"
+        android:layout_height="130dp"
+        app:layout_constraintLeft_toRightOf="@+id/wombat2"
+        app:layout_constraintTop_toTopOf="@+id/wombat2" />
+
+    <ImageView
+        android:id="@+id/dialog1"
+        android:layout_width="96dp"
+        android:layout_height="130dp"
+        app:layout_constraintLeft_toRightOf="@+id/wombat1"
+        app:layout_constraintTop_toTopOf="@+id/wombat1" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="27dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="54dp"
+        android:text=""
+        android:textColor="#FF5733"
+        android:textSize="18dp"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintLeft_toLeftOf="@+id/dialog2"
+        app:layout_constraintRight_toRightOf="@+id/dialog2"
+        app:layout_constraintTop_toTopOf="@+id/dialog2" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="33dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginTop="55dp"
+        android:text=""
+        android:textColor="#FF5733"
+        android:textSize="18dp"
+        app:layout_constraintRight_toRightOf="@+id/dialog1"
+        app:layout_constraintTop_toTopOf="@+id/dialog1" />
+
+    <ImageView
+        android:id="@+id/buttonMute"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ViewStub
+        android:id="@+id/guide1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:layout="@layout/guide_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
